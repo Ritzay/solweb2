@@ -1,0 +1,260 @@
+:root {
+  --bg-color: rgb(3, 3, 25);
+  --sec-bg-color: grey;
+  --button: orange;
+  --text-color: white;
+  --sec-text-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.navbar button {
+  padding: 10px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 200px;
+  margin: 20px;
+}
+
+.claim_image {
+  width: 20%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.claim_text {
+  width: 50%;
+  height: 900px;
+  padding-left: 30px;
+  padding-top: 160px;
+  display: inline-block;
+  justify-content: flex-start;
+  justify-items: center;
+}
+
+.claim_text h2 {
+  color: var(--text-color);
+  font-family: "Protest Guerrilla", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+
+.claim_text p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.claim_text h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.claim_text button {
+  width: 40%;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 50px;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.policy {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -250px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socials i {
+  font-size: 40px;
+  display: flex;
+  margin-left: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 800px) {
+  .navbar a {
+    font-size: 2.5rem;
+  }
+
+  .navbar button {
+    padding: 10px 30px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .claim_image {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .claim_text {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .claim_text h2 {
+    font-size: 4rem;
+  }
+
+  .claim_text p,
+  .claim_text h6 {
+    font-size: 1.5rem;
+  }
+
+  .claim_text button {
+    width: 60%;
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+
+  .policy {
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-top: 80px;
+  }
+
+  .socials {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .socials i {
+    font-size: 3rem;
+  }
+}
+
+/* Smaller screens (phones) */
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 2rem;
+  }
+
+  .navbar button {
+    padding: 8px 20px;
+    font-size: 1.5rem;
+  }
+
+  .claim_text h2 {
+    font-size: 3rem;
+  }
+
+  .claim_text p,
+  .claim_text h6 {
+    font-size: 1.2rem;
+  }
+
+  .claim_text button {
+    width: 80%;
+    font-size: 1.6rem;
+    padding: 8px;
+  }
+
+  .policy {
+    font-size: 1.4rem;
+    margin-top: 40px;
+  }
+
+  .socials i {
+    font-size: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 90px;
+    margin: auto;
+  }
+  .claim_image {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+
+  }
+
+}
